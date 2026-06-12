@@ -34,9 +34,10 @@ export default function Note({
   }, []);
 
   const handleChange = (e: React.FormEvent<HTMLParagraphElement>) => {
+    const text = e.currentTarget.innerText;
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      editNote(e.currentTarget.innerText, note.id);
+      editNote(text, note.id); // use captured value
     }, 500);
   };
 
