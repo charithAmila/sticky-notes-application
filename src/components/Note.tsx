@@ -37,7 +37,7 @@ export default function Note({
     const text = e.currentTarget.innerText;
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      editNote(text, note.id); // use captured value
+      editNote(text, note.id);
     }, 500);
   };
 
