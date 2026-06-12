@@ -27,8 +27,6 @@ sticky-notes/
 │   │   ├── note.css
 │   │   ├── TrashZone.tsx         # Trash drop zone
 │   │   └── trash-zone.css
-│   ├── hooks/
-│   │   └── useNote.ts            # Note interaction logic
 │   ├── services/
 │   │   └── NoteService.ts        # localStorage CRUD
 │   ├── types/
@@ -105,7 +103,7 @@ Notes are stored in `localStorage` as a JSON array under the key `"notes"`.
 ## Architecture Notes
 
 - State lives in `App.tsx` and flows down via props
-- `useNote` hook isolates all drag, resize, and edit logic from the component
+- `Note.tsx` handles all drag, resize, and edit logic internally
 - `NoteService` abstracts all `localStorage` reads and writes
 - Drag position is tracked with `useRef` to avoid re-renders on every mouse move
 - Text changes are debounced 500ms before saving to storage
