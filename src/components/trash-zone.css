@@ -1,0 +1,13 @@
+.trash-zone {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 2px dashed rgb(216, 11, 93);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}

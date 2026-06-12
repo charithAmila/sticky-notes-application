@@ -1,0 +1,37 @@
+.notes {
+  display: flex;
+  gap: 50px;
+  padding: 100px;
+}
+
+.note {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+}
+
+.note-editor {
+  height: auto;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 25px;
+}
+
+.is-dragging {
+  cursor: grabbing;
+}
+
+.resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  cursor: se-resize;
+  background: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.2) 50%);
+  border-radius: 0 0 3px 0;
+}

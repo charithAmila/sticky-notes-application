@@ -1,0 +1,24 @@
+.board {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.tool-bar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.btn-add-new {
+  border: 2px solid #213547;
+}
+
+.empty-note-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
