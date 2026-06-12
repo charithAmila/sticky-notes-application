@@ -2,6 +2,10 @@
 
 A single-page sticky notes application built with React and TypeScript.
 
+
+<img width="2054" height="1120" alt="Screenshot 2026-06-11 at 8 49 21 PM" src="https://github.com/user-attachments/assets/9f3f1569-826c-4da2-b8cf-d26fab37f1b1" />
+
+
 ## Features
 
 ### Core
