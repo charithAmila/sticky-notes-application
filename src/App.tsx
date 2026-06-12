@@ -110,7 +110,7 @@ function App() {
       ) : (
         <div className="empty-note-wrapper">
           <button className="btn-add-new" onClick={addNote}>
-            Create your First Note
+            Create your first note
           </button>
         </div>
       )}
